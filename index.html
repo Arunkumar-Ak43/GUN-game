@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spin & Trigger — 3D</title>
+  <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Spin &amp; Trigger — 3D</h1>
+    <canvas id="c"></canvas>
+
+    <div id="ui">
+      <button class="primary" id="spin">Spin &amp; Fire</button>
+      <button id="new">New Game</button>
+      <label class="chk"><input type="checkbox" id="toySkin"> Safer Reskin</label>
+      <span id="status" aria-live="polite"></span>
+    </div>
+
+    <details class="help"><summary>How to use</summary>
+      <ul>
+        <li>Click <b>Spin &amp; Fire</b> (or press <kbd>Space</kbd>/<kbd>Enter</kbd>) to spin the cylinder and pull the trigger.</li>
+        <li><b>New Game</b> randomizes the loaded chamber.</li>
+        <li>Drag to orbit. Scroll to zoom. Right‑drag to pan.</li>
+      </ul>
+    </details>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
